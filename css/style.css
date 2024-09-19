@@ -1,0 +1,36 @@
+/* Write your code here: */
+/* Selector Grouping */
+h1,h2 {
+    color:blueviolet;
+}
+
+/* Selector Chaining */
+h2.subheading#monday{
+    background-color: green;
+    color:white;
+    padding:10px;
+}
+
+/* Parent Child  */
+.box > p {
+    color:firebrick;
+}
+
+/* Descendant */
+.box li {
+    color:darkblue;
+}
+
+/* Selector Chaining  */
+p.done{
+    color:red;
+}
+
+li.done{
+    color:seagreen;
+}
+
+/* Combining Different Groupings */
+ul p.done{
+    font-size: 0.5rem;
+}

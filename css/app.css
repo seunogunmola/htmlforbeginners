@@ -8,6 +8,10 @@ p{
     color:green;
 }
 
+.note{
+    font-size: 20px;
+}
+
 /* Attribute Selector  */
 li[value="4"]{
     color:blue;
