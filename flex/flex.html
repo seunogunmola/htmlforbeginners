@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: inline-flex;
+            flex-direction: column;
+        }
+        .container > * {
+            flex-basis: 100px;
+        }
+        .red{
+            background-color: red;
+            width: 200px;
+        }
+        .orange{
+            background-color: orange;
+            /* width: 200px; */
+        }
+        .yellow{
+            background-color: yellow;
+            /* width: 200px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">Red</div>
+        <div class="orange">Orange</div>
+        <div class="yellow">Yellow</div>
+    </div>
+</body>
+</html>

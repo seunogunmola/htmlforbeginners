@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pricing-container{
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            gap:10px;
+            height:100vh;
+        }
+
+        .pricing-table{
+            background-color: aliceblue;
+            padding:1em;
+            border-radius:10px;
+            text-align: center;
+            max-width: 400px;
+            flex:1;
+        }
+
+        .pricing-title{
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .pricing-amount{
+            font-size:40px;
+            font-weight: bold;
+        }
+
+        .pricing-features ul{
+            list-style: none;
+        }
+
+        .pricing-button{
+            background-color: orange;
+            border:none;
+            border-radius: 5px;
+            padding:1em
+        }
+
+        @media (max-width:650px){
+            .pricing-container{
+                flex-direction: column;
+                height: 100%;
+            }
+            .pricing-table{
+                width:400px;
+            }
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-container">
+        <div class="pricing-table">
+            <div class="pricing-title">Basic</div>
+            <div class="pricing-amount">$5.00</div>
+            <div class="pricing-features">
+                <ul>
+                    <li>5gb</li>
+                    <li>1 User</li>
+                    <li>No Support</li>
+                </ul>    
+            </div>
+            <button class="pricing-button"> Order Now</button>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-title">Standard</div>
+            <div class="pricing-amount">$50.00</div>
+            <div class="pricing-features">
+                <ul>
+                    <li>50gb</li>
+                    <li>5 Users</li>
+                    <li>Phone Support</li>
+                </ul>
+            </div>
+            <button class="pricing-button"> Order Now</button>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-title">Premium</div>
+            <div class="pricing-amount">$100.00</div>
+            <div class="pricing-features">
+                <ul>
+                    <li>100gb</li>
+                    <li>50 Users</li>
+                    <li>24/7 Support</li>
+                </ul>
+            </div>
+            <button class="pricing-button"> Order Now</button>
+        </div>
+    </div>
+</body>
+</html>
